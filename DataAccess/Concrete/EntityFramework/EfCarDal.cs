@@ -44,8 +44,8 @@ namespace DataAccess.Concrete.EntityFramework
             using (RentACarContext context = new RentACarContext())
             {
                 return filter == null
-                    ? context.Set<Car>().ToList() //tüm tabloyu listeye çevirip bize veriyor.
-                    : context.Set<Car>().Where(filter).ToList(); // filtre null değilse filtreleyip ver. Bir lambda.
+                    ? context.Set<Car>().ToList() 
+                    : context.Set<Car>().Where(filter).ToList(); 
             }
         }
 
